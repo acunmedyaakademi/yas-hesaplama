@@ -1,0 +1,184 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Poppins", sans-serif;
+  background: #f0f0f0;
+  padding: 120px 300px;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.wrapper {
+  top: 171px;
+  left: 300px;
+  padding: 56px;
+  border-radius: 24px 24px 200px 24px;
+  background-color: #ffffff;
+}
+
+.ageCalculator {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.dateContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.dateContainer input {
+  font-size: 32px;
+  line-height: 48px;
+  color: #151515;
+  border: 1px solid #dcdcdc;
+  padding: 12px 24px;
+  gap: 16px;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+}
+
+.dateContainer input:hover {
+  border: 1px solid #854dff;
+}
+
+.dateContainer label {
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.25em;
+  color: #716f6f;
+  text-transform: uppercase;
+}
+
+#ekleBtn {
+  background: #854dff;
+  border-radius: 50%;
+  border: none;
+  padding: 26px;
+  cursor: pointer;
+}
+
+#ekleBtn:active {
+  background: #151515;
+}
+
+.lineBtn {
+  display: flex;
+  align-items: center;
+}
+
+.lineBtn hr {
+  width: 100%;
+}
+
+.date {
+  font-size: 104px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 114.4px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #151515;
+}
+
+.date span {
+  color: #854dff;
+  margin-right: 8px;
+}
+
+.errorMessage {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: #ff5959;
+}
+
+/*? mobil start  */
+
+@media (width < 425px) {
+  body {
+    padding: 88px 18px;
+  }
+
+  .wrapper {
+    padding: 48px 24px;
+  }
+
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  .dateContainer input {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .dateContainer label {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .lineBtn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #ekleBtn {
+    padding: 20px;
+  }
+
+  .date {
+    font-size: 56px;
+    line-height: 61.4px;
+  }
+}
+
+/*? mobil end  */

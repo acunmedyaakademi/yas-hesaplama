@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yaş Hesaplama</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/date.css">
+  <script src="assets/js/date.js" defer></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <form class="ageCalculator" autocomplete="off">
+      <div class="container">
+        <div class="dateContainer">
+          <label for="day">Gün</label>
+          <input type="number" name="day" placeholder="DD">
+          <p class="errorMessage" id="day-error"></p>
+        </div>
+
+        <div class="dateContainer">
+          <label for="month">Ay</label>
+          <input type="number" name="month" placeholder="MM">
+          <p class="errorMessage" id="month-error"></p>
+
+        </div>
+
+        <div class="dateContainer">
+          <label for="year">Yıl</label>
+          <input type="number" name="year" placeholder="YYYY">
+          <p class="errorMessage" id="year-error"></p>
+
+        </div>
+      </div>
+
+      <div class="lineBtn">
+        <hr color="#DCDCDC">
+        <button id="ekleBtn"><img src="assets/img/btn-icon.svg" alt=""></button>
+      </div>
+    </form>
+    <div class="dive"></div>
+  </div>
+
+</body>
+
+</html>
